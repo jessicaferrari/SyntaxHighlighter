@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Usando o SyntaxHighlighter</title>
+		
+		<!-- Arquivos Javascript-->
+		<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.2.min.js'></script> <!-- Indica que estamos utilizando JavaScript e pede suporte do google -->
+		<script language="javascript" src="Scripts/shCore.js"></script><!-- Indica que estamos utilizando o SyntaxHighlighter-->
+		<script language="javascript" src="Scripts/shBrushCSharp.js"></script><!-- Indica que estamos utilizando CSharp como linguagem para os blocos -->
+		
+		<!-- 
+			Se voce quiser usar varias linguagens, pasta adicionar cada JavaScript correspondente!
+			Por exemplo, se eu quiser usar Java juntamente com o CSharp, adicionaria a linha abaixo!
+
+			<script language="javascript" src="Scripts/shBrushJava.js"></script>
+		-->
+
+		<!-- Arquivos CSS -->
+		<link rel="stylesheet" type="text/css" href="Styles/SyntaxHighlighter.css" />
+		
+		
+	</head>
+
+	<body>
+		<h2>Esse eh um exeplo de como funciona o SyntaxHighlighter</h2>
+		
+		
+		<!-- Inicio do Nosso bloco de Codigo -->
+		<pre name="code" class="c-sharp">
+			public void HelloFerrari()
+			{
+				Console.Writeln("Acesse http://jferrari.atwebpages.com/index.php");
+			}
+		</pre>
+		
+		<!-- Script que inicia o arquivo Flash -->
+		<script language='javascript'>
+			dp.SyntaxHighlighter.ClipboardSwf = 'Scripts/clipboard.swf';
+			dp.SyntaxHighlighter.BloggerMode();
+			dp.SyntaxHighlighter.HighlightAll('code');
+		</script>
+
+	</body>
+</html>
